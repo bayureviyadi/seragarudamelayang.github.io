@@ -1,0 +1,215 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #010101;
+    background-image: url(/Image/Sejarah\ Pencak\ Silat\ Sera.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* NAVBAR I */
+.container-navbarI {
+    background-color: #111;
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.signin-navbarI a {
+    color: #fff;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0.5rem;
+}
+
+.signin-navbarI a:hover {
+    color: #444;
+}
+
+.extra-navbarI a {
+    color: #fff;
+    padding: 0 0.5rem;
+}
+
+.extra-navbarI a:hover {
+    color: #444;
+}
+
+#hamburger-menu {
+    display: none;
+}
+/* NAVBAR I END */
+
+/* NAVBAR II */
+.container-navbarII {
+    background-color: #010101;
+    height: 7vh;
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.ul-navbarII {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.li-navbarII {
+    list-style-type: none;
+}
+
+.container-navbarII .ul-navbarII .li-navbarII a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-navbarII .ul-navbarII .li-navbarII a:hover {
+    color: #da020e;
+}
+
+.container-navbarII .ul-navbarII .li-navbarII a::after {
+    content:'';
+    display: block;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #da020e;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.container-navbarII .ul-navbarII .li-navbarII a:hover::after {
+    transform: scaleX(1.1);
+}
+
+/* ketika di scroll */
+.container-navbarII.scroll {
+    top: 0px;
+}
+/* NAVBAR II END */
+
+/* CONTENT */
+.container-content {
+    padding: 20rem;
+    max-height: max-content;
+}
+
+.container-content h2 {
+    color: #010101;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 3rem;
+}
+
+.container-content p {
+    color: #101010;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+}
+/* CONTENT END */
+
+/* FOOTER */
+
+footer .ul-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .ul-footer .li-footer {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sosmed-footer,
+footer .ul-footer .li-footer a,
+footer .credit,
+footer .credit a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 700;
+}
+
+footer .ul-footer .li-footer a:hover,
+footer .credit a:hover {
+    color: #444;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 2rem;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+/* FOOTER END */
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+    
+    /* Sidebar */
+    .container-navbarII {
+        position: absolute;
+        top: 3;
+        left: -100%;
+        background-color: #111 ;
+        width: 20rem;
+        height: 100vh;
+    }
+
+    .container-navbarII.active{
+        left: 70%;
+    }
+
+    .container-navbarII .ul-navbarII {
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    /* Sidebar End */
+    body {
+        background-position-x: -1000px;
+    }
+    
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+/* Media Queries End */
+

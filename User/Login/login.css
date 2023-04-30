@@ -1,0 +1,87 @@
+*, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 10% 38%;
+    background-image: url(/Image/Sejarah\ Pencak\ Silat\ Sera.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login {
+    background-color: #222;
+    color: white;
+    height: 30rem;
+    width: 25rem;
+    border-radius: 20px;
+}
+
+.login h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.login .row {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin: 10% 1rem;
+    padding: 1.5rem;
+}
+
+.login .row form .input-group input{
+    width: 20rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+
+.login .row form .btn  {
+    padding: 0.5rem 2rem;
+    width: 20.4rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #222;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login .row form .btn:hover {
+    transform: scale(1.05);
+}
+
+.login .row form .lupa-sandi a,
+.Register a{
+    text-decoration: none;
+    color: rgb(0, 89, 255);
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+/* Media Queries End */
