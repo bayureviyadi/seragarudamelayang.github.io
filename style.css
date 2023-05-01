@@ -339,7 +339,7 @@ footer .social {
     }
 }
 /* Tablet */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     html {
         font-size: 62.5%;
     }
@@ -411,75 +411,10 @@ footer .social {
 }
 
 /* Mobile Phone */
-@media (max-width: 450px) {
+@media only screen and (max-width: 480px) {
     html {
         font-size: 55%;
     }
-
-    #hamburger-menu {
-        display: inline-block;
-    }
-    
-    /* Sidebar */
-    .container-navbarII {
-        position: absolute;
-        top: 3;
-        left: -100%;
-        background-color: #111 ;
-        width: 20rem;
-        height: 100vh;
-    }
-
-    .container-navbarII.active{
-        left: 70%;
-    }
-
-    .container-navbarII .ul-navbarII {
-        display: block;
-        margin: 1rem;
-        padding: 1rem;
-        font-size: 3rem;
-    }
-    /* Sidebar End */
-
-    /* About us */
-    .aboutus .row {
-        flex-wrap: wrap;
-    }
-
-    .aboutus .row .about-img img {
-        height: 24rem;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .aboutus .row .content {
-        padding: 0;
-    }
-
-    .aboutus .row .content h3 {
-        margin-top: 1rem;
-        font-size: 2rem;
-    }
-
-    .aboutus .row .content p {
-        font-size: 1.6rem;
-    }
-    /* About us end*/
-
-    /* Contact us */
-    .contact .row {
-        flex-wrap: wrap;
-    }
-
-    .contact .row .map {
-        height: 30rem;
-    }
-
-    .contact .row form {
-        padding-top: 0;
-    }
-    /* Contact us end */
 }
 /* Media Queries End */
 
