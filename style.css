@@ -120,7 +120,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("/Image/bg2.jpg");
+    background-image: url("Image/bg2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
