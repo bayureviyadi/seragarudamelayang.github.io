@@ -339,7 +339,7 @@ footer .social {
     }
 }
 /* Tablet */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     html {
         font-size: 62.5%;
     }
@@ -411,7 +411,7 @@ footer .social {
 }
 
 /* Mobile Phone */
-@media only screen and (max-width: 480px) {
+@media (max-width: 450px) {
     html {
         font-size: 55%;
     }
